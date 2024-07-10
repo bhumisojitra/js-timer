@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIMER</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        .timer{
+            position: relative;
+            background-image: url('./img/1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            font-family: "Montserrat", sans-serif;
+        }
+        .timerr{
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%;
+            background-color: transparent; 
+            border: 5px solid rgb(229, 225, 225); 
+            backdrop-filter: blur(5px); 
+            padding: 40px; 
+            box-shadow: 0px 0px 10px white; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+    </style>
+    <body>
+        <div class="timer">
+            <div style="display: flex; justify-content: space-between; align-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <div class="timerr col-3 text-center">
+                    <h2 id="day" style="font-size: 80px; color: white;"></h2>
+                </div>
+                <span style="font-size: 60px; padding: 30px; color: white;">:</span>
+               <h4 class="text-white position-absolute" style="z-index: 1; bottom: -80px; left: 6%; text-shadow: 0px 0px 10px white; font-size: 35px;">DAY</h4>
+                <div class="timerr col-3 text-center">
+                    <h2 id="hour" style="font-size: 80px; color: white;"></h2>
+                </div>
+                <span style="font-size: 60px; padding: 30px; color: white;">:</span>
+                <h4 class="text-white position-absolute" style="z-index: 1; bottom: -80px; left: 31%; text-shadow: 0px 0px 10px white; font-size: 35px;">HOUR</h4>
+                <div class="timerr col-3 text-center">
+                    <h2 id="minute" style="font-size: 80px; color: white;"></h2>
+                </div>
+                <span style="font-size: 60px; padding: 30px; color: white;">:</span>
+                <h4 class="text-white position-absolute" style="z-index: 1; bottom: -80px; left: 57%; text-shadow: 0px 0px 10px white; font-size: 35px;">MINUTE</h4>
+                <div class="timerr col-3 text-center">
+                    <h2 id="second" style="font-size: 80px; color: white;"></h2>
+                </div>
+                <h4 class="text-white position-absolute" style="z-index: 1; bottom: -80px; right: 2%; text-shadow: 0px 0px 10px white; font-size: 35px;">SECOND</h4>
+            </div>
+        </div>
+        
+
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
