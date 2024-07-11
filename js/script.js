@@ -33,14 +33,12 @@ const timer = () => {
         }
 
         if(sec >= 60){
-            min++;
             sec = 0;
             second.innerHTML = sec++;
             minute.innerHTML = min++;
         }
 
         if(min > 59){
-            hr++;
             min = 0;
             second.innerHTML = sec++;
             minute.innerHTML = min++;
@@ -48,7 +46,6 @@ const timer = () => {
         }
 
         if(hr > 23){
-            days++;
             hr = 0;
             second.innerHTML = sec++;
             minute.innerHTML = min++;
